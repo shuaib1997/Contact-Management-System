@@ -18,7 +18,7 @@ public class ContactController {
 
     @GetMapping
     @Operation(summary = "Get all contacts")
-    public ResponseEntity<List<Contact>> getAllContacts() {
+    public ResponseEntity<List<Contact>> fetchAllContacts() {
         return ResponseEntity.ok().body(contactService.getAllContacts());
     }
 
